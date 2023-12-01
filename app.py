@@ -24,7 +24,9 @@ from lang_list import (
 HF_TOKEN = "add key here"
 CHECKPOINTS_PATH = pathlib.Path("./models").resolve()
 if not CHECKPOINTS_PATH.exists():
-    snapshot_download(repo_id="facebook/seamless-m4t-v2-large", repo_type="model", local_dir=CHECKPOINTS_PATH, token=HF_TOKEN)
+    snapshot_download(
+        repo_id="facebook/seamless-m4t-v2-large", repo_type="model", local_dir=CHECKPOINTS_PATH, token=HF_TOKEN
+    )
 asset_store.env_resolvers.clear()
 asset_store.env_resolvers.append(lambda: "demo")
 demo_metadata = [
