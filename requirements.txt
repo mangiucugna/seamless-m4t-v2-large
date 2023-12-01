@@ -1,0 +1,6 @@
+./whl/seamless_communication-1.0.0-py3-none-any.whl
+fairseq2
+gradio
+omegaconf
+torch
+torchaudio
